@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Voting Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-a"></div>
+      <div class="ambient ambient-b"></div>
+
+      <main class="app-card">
+        <section class="hero">
+          <p class="eyebrow">Zama Private Voting Demo</p>
+          <h1>私密投票前端演示</h1>
+          <p class="hero-copy">
+            这是一版不依赖额外前端框架的最小浏览器界面，用来连接钱包、读取公开状态，并触发结果发布与访问授权流程。
+          </p>
+
+          <div class="hero-actions">
+            <button id="connect-wallet" class="primary-button">连接钱包</button>
+            <button id="refresh-button" class="ghost-button">刷新公开状态</button>
+          </div>
+        </section>
+
+        <section class="grid">
+          <article class="panel">
+            <h2>连接状态</h2>
+            <dl class="meta-list">
+              <div>
+                <dt>钱包地址</dt>
+                <dd id="wallet-address">未连接</dd>
+              </div>
+              <div>
+                <dt>链 ID</dt>
+                <dd id="chain-id">未知</dd>
+              </div>
+              <div>
+                <dt>推荐链 ID</dt>
+                <dd id="recommended-chain">31337</dd>
+              </div>
+              <div>
+                <dt>网络检查</dt>
+                <dd id="network-status">待检查</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="panel">
+            <h2>合约入口</h2>
+            <label class="field">
+              <span>合约地址</span>
+              <input id="contract-address" placeholder="0x..." />
+            </label>
+            <p class="helper-text">
+              先在 [examples/private-voting] 上层目录运行 `npm run chain` 和 `npm run deploy:localhost`，再把部署地址贴到这里。
+            </p>
+          </article>
+        </section>
+
+        <section class="grid">
+          <article class="panel panel-wide">
+            <h2>投票公开状态</h2>
+            <div id="phase-badge" class="status-badge">等待读取</div>
+
+            <div class="details-grid">
+              <div>
+                <span class="detail-label">标题</span>
+                <strong id="vote-title">-</strong>
+              </div>
+              <div>
+                <span class="detail-label">开始时间</span>
+                <strong id="start-time">-</strong>
+              </div>
+              <div>
+                <span class="detail-label">结束时间</span>
+                <strong id="end-time">-</strong>
+              </div>
+              <div>
+                <span class="detail-label">结果状态</span>
+                <strong id="results-status">-</strong>
+              </div>
+              <div>
+                <span class="detail-label">当前钱包是否已投票</span>
+                <strong id="has-voted">-</strong>
+              </div>
+              <div>
+                <span class="detail-label">合约所有者</span>
+                <strong id="owner-address">-</strong>
+              </div>
+            </div>
+
+            <div id="options-container" class="options-block">
+              <div class="option-card empty-state-card">
+                <span class="option-index">等待读取</span>
+                <strong>连接钱包并读取合约后显示候选项</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <h2>交互动作</h2>
+            <div class="action-stack">
+              <label class="field">
+                <span>选择候选项（Sepolia 加密投票）</span>
+                <select id="vote-option">
+                  <option value="">请先读取候选项</option>
+                </select>
+              </label>
+              <button id="submit-encrypted-vote" class="primary-button" disabled>提交加密投票</button>
+              <button id="publish-results" class="primary-button" disabled>发布结果</button>
+              <button id="grant-access" class="ghost-button" disabled>为当前钱包授权查看结果</button>
+              <button id="decrypt-results" class="ghost-button" disabled>解密当前结果</button>
+            </div>
+
+            <p class="helper-text">
+              本地链模式下，这个页面优先用于读取公开状态和演示所有者操作。浏览器端加密投票与结果解密按官方 relayer
+              SDK 路径接入，更适合在 Sepolia 上验证。
+            </p>
+          </article>
+        </section>
+
+        <section class="panel results-panel">
+          <h2>解密结果</h2>
+          <div id="decrypted-results" class="result-list">
+            <div class="result-card">
+              <span class="detail-label">等待结果</span>
+              <strong>结果发布并授权后，这里会显示解密票数。</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel footer-panel">
+          <h2>运行提示</h2>
+          <div class="tips-grid">
+            <div>
+              <h3>本地启动</h3>
+              <p>在 `examples/private-voting` 目录运行 `python3 -m http.server 4173`，然后打开 `http://localhost:4173/frontend/`。</p>
+            </div>
+            <div>
+              <h3>读取边界</h3>
+              <p>结果发布前，这里只展示公开元信息，不会把“当前不可见”误导成错误。</p>
+            </div>
+            <div>
+              <h3>下一步</h3>
+              <p>如果我们继续推进，下一刀会把 relayer/browser 端加密投票输入集成进来。</p>
+            </div>
+          </div>
+
+          <div id="status-line" class="status-line status-idle">
+            <span class="status-dot"></span>
+            <span id="status-message">先连接钱包，再输入合约地址。</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
