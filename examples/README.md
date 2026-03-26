@@ -12,4 +12,4 @@
 
 - `private-voting`：私密投票应用
 
-建议从 [private-voting/RUNBOOK.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting/RUNBOOK.md) 开始跑，再配合 [private-voting/FAQ.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting/FAQ.md) 排查常见问题。
+建议从 [private-voting/RUNBOOK.md](private-voting/RUNBOOK.md) 开始跑，再配合 [private-voting/FAQ.md](private-voting/FAQ.md) 排查常见问题。

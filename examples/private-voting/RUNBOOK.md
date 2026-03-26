@@ -19,7 +19,7 @@
 进入目录：
 
 ```bash
-cd /Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting
+cd examples/private-voting
 ```
 
 安装依赖：

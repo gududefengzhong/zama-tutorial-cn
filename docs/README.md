@@ -4,8 +4,8 @@
 
 ## 第一部分：建立认知
 
-1. [为什么是 Zama](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/01-why-zama.md)
-2. [核心概念](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/02-core-concepts.md)
+1. [为什么是 Zama](01-why-zama.md)
+2. [核心概念](02-core-concepts.md)
 
 这一部分重点解决：
 
@@ -15,8 +15,8 @@
 
 ## 第二部分：开始上手
 
-3. [环境搭建](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/03-setup.md)
-4. [第一个 Demo](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/04-first-demo.md)
+3. [环境搭建](03-setup.md)
+4. [第一个 Demo](04-first-demo.md)
 
 这一部分重点解决：
 
@@ -26,10 +26,11 @@
 
 ## 第三部分：走向真实应用
 
-5. [完整 dApp](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/05-full-dapp.md)
-6. [调试与常见坑](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/06-debugging-and-pitfalls.md)
-7. [从 Demo 到项目](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/07-from-demo-to-project.md)
-8. [FAQ](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/FAQ.md)
+5. [完整 dApp](05-full-dapp.md)
+6. [调试与常见坑](06-debugging-and-pitfalls.md)
+7. [从 Demo 到项目](07-from-demo-to-project.md)
+8. [FAQ](FAQ.md)
+9. [截图素材清单](SCREENSHOT-CHECKLIST.md)
 
 这一部分重点解决：
 

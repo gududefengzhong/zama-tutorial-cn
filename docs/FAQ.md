@@ -90,8 +90,8 @@
 
 最推荐的顺序是：
 
-1. 先看 [docs/01-why-zama.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/01-why-zama.md) 和 [docs/02-core-concepts.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/02-core-concepts.md)
-2. 再看 [docs/03-setup.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/03-setup.md)
-3. 再按 [examples/private-voting/RUNBOOK.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting/RUNBOOK.md) 跑本地示例
+1. 先看 [01-why-zama.md](01-why-zama.md) 和 [02-core-concepts.md](02-core-concepts.md)
+2. 再看 [03-setup.md](03-setup.md)
+3. 再按 [../examples/private-voting/RUNBOOK.md](../examples/private-voting/RUNBOOK.md) 跑本地示例
 
 这样最不容易在环境和概念之间同时卡住。

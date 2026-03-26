@@ -21,4 +21,4 @@
 
 ## 我应该先跑哪个文件
 
-直接从 [RUNBOOK.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting/RUNBOOK.md) 开始，不要自己拼步骤。
+直接从 [RUNBOOK.md](RUNBOOK.md) 开始，不要自己拼步骤。

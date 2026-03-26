@@ -50,11 +50,20 @@
 
 ## 建议学习路径
 
-1. 先看 [为什么是 Zama](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/01-why-zama.md)，建立问题意识
-2. 再看 [核心概念](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/02-core-concepts.md)，理解 FHEVM 的基本模型
-3. 按 [环境搭建](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/03-setup.md) 完成本地准备
-4. 跑通 [第一个 Demo](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/04-first-demo.md)
-5. 最后进入 [完整 dApp](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/docs/05-full-dapp.md)
+1. 先看 [为什么是 Zama](docs/01-why-zama.md)，建立问题意识
+2. 再看 [核心概念](docs/02-core-concepts.md)，理解 FHEVM 的基本模型
+3. 按 [环境搭建](docs/03-setup.md) 完成本地准备
+4. 跑通 [第一个 Demo](docs/04-first-demo.md)
+5. 最后进入 [完整 dApp](docs/05-full-dapp.md)
+
+## 快速开始
+
+如果你想直接上手主线案例，建议走这条最短路径：
+
+1. 阅读 [docs/README.md](docs/README.md)
+2. 进入 [examples/private-voting/README.md](examples/private-voting/README.md)
+3. 按 [examples/private-voting/RUNBOOK.md](examples/private-voting/RUNBOOK.md) 跑本地示例
+4. 卡住时查 [docs/FAQ.md](docs/FAQ.md) 和 [examples/private-voting/FAQ.md](examples/private-voting/FAQ.md)
 
 ## 当前进度
 
@@ -70,6 +79,14 @@
 - 每章对应的截图与运行演示
 - 更细的 FAQ 和排错记录
 - 浏览器端隐私交互链路的进一步打磨
+
+## 配套资料
+
+- 文档总览：[docs/README.md](docs/README.md)
+- 主线案例：[examples/private-voting/README.md](examples/private-voting/README.md)
+- 本地运行手册：[examples/private-voting/RUNBOOK.md](examples/private-voting/RUNBOOK.md)
+- 常见问题：[docs/FAQ.md](docs/FAQ.md)
+- 截图素材清单：[docs/SCREENSHOT-CHECKLIST.md](docs/SCREENSHOT-CHECKLIST.md)
 
 ## 主线案例
 

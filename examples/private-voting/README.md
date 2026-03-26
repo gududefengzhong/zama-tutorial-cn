@@ -85,8 +85,8 @@ npm run chain
 npm run deploy:localhost
 ```
 
-更完整的本地运行顺序可以直接看 [RUNBOOK.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting/RUNBOOK.md)。
-常见问题可以看 [FAQ.md](/Users/mudimu/mudi/web3/rochestor/zama-tutorial-cn/examples/private-voting/FAQ.md)。
+更完整的本地运行顺序可以直接看 [RUNBOOK.md](RUNBOOK.md)。
+常见问题可以看 [FAQ.md](FAQ.md)。
 
 ## 你应该如何阅读这个案例
 
